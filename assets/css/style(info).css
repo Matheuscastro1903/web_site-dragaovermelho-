@@ -1,0 +1,181 @@
+*{ /*tira margin e padding de todos para ficar mais fácil de editar dps*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.topo{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(3,3,3);
+    display: flex;              /* ativa flexbox */
+    align-items: center;        /* alinha verticalmente */
+    gap: 20px;                  /* espaço entre logo e título */
+
+}
+
+.titulo-main{
+    color: rgb(136, 4, 4);
+    font-size: 90px;
+     font-weight: bold;
+    
+    padding: 40px;
+    margin-left: 10px;
+    
+}
+
+
+.container {
+  display: flex;     /* coloca filhos lado a lado */
+}
+
+.logo-topo{
+    width: 160px;
+    height: 150px;
+    margin-left: 40px;
+    
+
+
+}
+
+.menu-lateral{
+    background-color: rgb(3, 3, 3);
+    height: 100vh;
+    width: 180px;
+}
+
+
+
+
+
+
+
+.lista-lateral{
+    font-size: 30px;
+    
+    padding: 15px;
+}
+
+
+
+.lista-lateral a{
+    text-decoration: none;  /* tira o sublinhado */
+    color: rgb(136, 4, 4);           /* cor do texto */
+    font-size: 30px;        /* tamanho da fonte */
+    display: block;         /* ocupa a largura toda do menu */
+    padding: 12px 4px 25px;     /* dá espaço interno */
+     font-weight: bold;
+}
+
+.main-menu {
+    /*O elemento cresce para ocupar todo 
+    espaço disponível no container pai*/
+
+    /*SEM flex: 1 → O elemento só ocupa o espaço do seu conteúdo*/
+    flex: 1;                 /* ← CHAVE DO FUNCIONAMENTO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* ← Centraliza HORIZONTALMENTE */
+    padding: 20px;
+
+}
+
+.main-menu-div{
+    margin-top: 50px;
+}
+
+
+
+/*
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ← Só centraliza VERTICALMENTE 
+    /* FALTOU: align-items: center para horizontal 
+}
+*/
+
+
+.imagem-info{
+    width: 155px;
+    height: 400px;
+}
+
+
+/*estilizando os botões*/
+/* 
+Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
+Os estilos aqui são aplicados a ambos ao mesmo tempo
+*/
+
+/* 
+Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
+Os estilos aqui são aplicados a ambos ao mesmo tempo
+*/
+
+
+.slideshow-container{
+    display: flex;
+    flex-direction: row  /*permite que o que estiver dentro da div slideshow fique em linha*/
+    
+}
+
+button.prev, button.next {
+  
+  /* Remove a cor de fundo padrão do botão HTML */
+  background: none;
+
+  /* Remove a borda padrão dos botões */
+  border: none;
+
+  /* Muda o cursor para a "mãozinha" ao passar por cima (indicando que é clicável) */
+  cursor: pointer;
+    
+  
+  
+
+  /* Coloca o botão verticalmente no meio do container */
+  top: 50%;
+
+  /* Move o botão para cima metade da sua própria altura 
+     (para centralizá-lo de forma exata no meio vertical) */
+  
+
+  /* Define a cor do texto (ou do ícone da seta) como branca */
+  color: rgb(0, 0, 0);
+
+  /* Aumenta o tamanho da fonte (ou seta) para deixá-la mais visível */
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+/* Esconde todos os slides por padrão */
+.mySlides-fade {
+    display: none; /* Faz todos os slides ficarem invisíveis inicialmente */
+}
+
+/* Mostra apenas o primeiro slide inicialmente */
+.slideshow-container  .mySlides-fade:first-child{
+    display: block; /* Apenas o PRIMEIRO slide fica visível quando a página carrega */
+}
+
+/* Efeito de transição fade */
+.fade {
+    animation-name: fade; /* Nome da animação que será usada */
+    animation-duration: 1.5s; /* A transição dura 1.5 segundos */
+}
+
+/* Define os passos da animação de fade */
+@keyframes fade {
+    from { opacity: 0.4; } /* Começa quase transparente (40% de opacidade) */
+    to { opacity: 1; }     /* Termina totalmente visível (100% de opacidade) */
+}
+
+.prev{
+    margin-right: 20px;
+}
+
+.next{
+    margin-left: 20px;
+}
