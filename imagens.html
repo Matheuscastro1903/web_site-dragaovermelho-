@@ -7,7 +7,7 @@
 
 
     <!--link para ligar com o css-->
-    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/css/style(imgs).css">
 </head>
 <body>
 
@@ -37,9 +37,9 @@
 
                     <li class="lista-lateral"><a href="index.html">História</a></li>
             
-                    <li class="lista-lateral"><a href="atletas.html">Atletas</a></li>
+                    <li class="lista-lateral"><a href="atletas.html">Horários</a></li>
 
-                     <li class="lista-lateral"><a href="imagens.html">Horários</a></li>
+                     <li class="lista-lateral"><a href="imagens.html">Atletas</a></li>
 
                     <li class="lista-lateral"><a href="info.html">Informações</a></li>
                 
@@ -53,6 +53,69 @@
         </aside>
 
         <main class="main-menu">
+            <div class="main-menu-div">    <!-- Container principal do slideshow -->
+                
+                
+                <div class="slideshow-container">
+
+
+                    <button class="prev" type="button" onclick="plusSlides(-1)">&#10094;</button>
+                <!-- Cada bloco 'mySlides' representa um slide individual -->
+                    <!-- primeiro slide -->
+                    <div class="slides-content">
+                        <div class="mySlides-fade">
+                        <!-- Mostra o número do slide (1 de 3) -->
+                        <!--essa div controlará a imagem-->
+                        <!-- Imagem do slide, ocupa 100% da largura do container -->
+                            <img class="imagem-info" src="assets/img/imagemtreino1.jpg" style="width:100%">
+
+                        </div>
+
+                <!-- Segundo slide -->
+                        <div class="mySlides-fade">
+                            <img class="imagem-info" src="assets/img/imagemtreino2.jpg" style="width:100%"><!--essa div controlará a imagem-->
+                        </div> <!--essa div controla os botões-->
+
+                        <!-- terceiro slide -->
+                        <div class="mySlides-fade">
+                        <!-- Mostra o número do slide (1 de 3) -->
+                        <!--essa div controlará a imagem-->
+                        <!-- Imagem do slide, ocupa 100% da largura do container -->
+                            <img class="imagem-info" src="assets/img/imagemtreino3.jpg" style="width:100%">
+
+                        </div>
+
+                <!-- quarto slide -->
+                        <div class="mySlides-fade">
+                            <img class="imagem-info" src="assets/img/imagemtreino4.jpg" style="width:100%"><!--essa div controlará a imagem-->
+                        </div> <!--essa div controla os botões-->
+                    
+                    
+                    </div>
+
+                
+                    <!-- type="button" evita o envio de formulários acidental -->
+                        
+                    
+                        
+                    <!-- Botão para avançar um slide -->
+                    <button class="next" type="button" onclick="plusSlides(1)">&#10095;</button>
+    
+                    
+
+                <!-- Quebra de linha para separar o slideshow dos pontos (dots) -->
+                    
+
+                <!-- Seção dos "dots" (pontinhos abaixo do slideshow) -->
+                
+        
+
+
+       
+    
+                
+            
+            </div>
 
             
         
@@ -64,5 +127,7 @@
        
     
     </div>
+
+    <script src="assets/js/botoes(imagens).js"></script>
 </body>
 </html>

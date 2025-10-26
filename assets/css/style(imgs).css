@@ -1,4 +1,4 @@
-*{ /*tira margin e padding de todos para ficar mais fácil de editar dps*/
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -68,6 +68,7 @@
      font-weight: bold;
 }
 
+
 .main-menu {
     /*O elemento cresce para ocupar todo 
     espaço disponível no container pai*/
@@ -104,31 +105,15 @@
 
 
 
-.imagem-info{
-    width: 155px;
-    height: 400px;
-}
 
-
-/*estilizando os botões*/
-/* 
-Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
-Os estilos aqui são aplicados a ambos ao mesmo tempo
-*/
-
-/* 
-Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
-Os estilos aqui são aplicados a ambos ao mesmo tempo
-*/
-
-
-/*códigos para fazer o slideshow*/
 
 .slideshow-container{
+    width: 700px; 
     display: flex;
     flex-direction: row  /*permite que o que estiver dentro da div slideshow fique em linha*/
     
 }
+
 
 button.prev, button.next {
   
@@ -182,13 +167,9 @@ button.prev, button.next {
 }
 
 .prev{
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .next{
-    margin-left: 20px;
-}
-
-.li-atencao{
-    margin: 5px;
+    margin-left: 40px;
 }
