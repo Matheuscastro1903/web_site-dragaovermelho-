@@ -6,20 +6,15 @@
 
 
 /* CORREÇÃO ESPECÍFICA DO HEADER .topo */
-  .topo {
+.topo{
+    width: 100%;
+    height: 200px;
     background-color: rgb(3,3,3);
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    padding: 1rem;
-    width: 100% !important; /* Força 100% de largura */
-    max-width: 100% !important; /* Garante que não ultrapasse */
-    box-sizing: border-box; /* Inclui padding na largura total */
-    margin: 0 !important; /* Remove margens */
-    left: 0 !important;
-    right: 0 !important;
-  }
+    display: flex;              /* ativa flexbox */
+    align-items: center;        /* alinha verticalmente */
+    gap: 20px;                  /* espaço entre logo e título */
+
+}
 
 .titulo-main{
     color: rgb(136, 4, 4);
@@ -93,6 +88,7 @@
     object-fit: cover;      /* ★ MAGICO - ajusta a imagem sem distorcer */
     object-position: center; /* Centraliza o foco da imagem */
     margin: 15px;
+    border-radius: 15px;
 }
 
 .main-menu{
@@ -215,6 +211,7 @@
     object-fit: cover;      /* ★ MAGICO - ajusta a imagem sem distorcer */
     object-position: center; /* Centraliza o foco da imagem */
     margin: 10px;
+    
 }
 
 .div-atleta1{

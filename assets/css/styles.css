@@ -184,6 +184,7 @@
     width: 90%; /* ocupa a tela mas sem estourar */
     max-width: 350px;
     margin: 0 auto;
+    border-radius: 15px;
   }
 
   .div-conteudo {

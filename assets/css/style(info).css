@@ -107,6 +107,7 @@
 .imagem-info{
     width: 155px;
     height: 400px;
+    border-radius: 15px;
 }
 
 
@@ -270,5 +271,6 @@ button.prev, button.next {
   .imagem-info{
     width: 150px;
     height: 200px;
+    border-radius: 15px;
     }
 }
