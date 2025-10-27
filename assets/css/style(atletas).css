@@ -5,15 +5,21 @@
 
 
 
-.topo{
-    width: 100%;
-    height: 200px;
+/* CORREÇÃO ESPECÍFICA DO HEADER .topo */
+  .topo {
     background-color: rgb(3,3,3);
-    display: flex;              /* ativa flexbox */
-    align-items: center;        /* alinha verticalmente */
-    gap: 20px;                  /* espaço entre logo e título */
-
-}
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+    width: 100% !important; /* Força 100% de largura */
+    max-width: 100% !important; /* Garante que não ultrapasse */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin: 0 !important; /* Remove margens */
+    left: 0 !important;
+    right: 0 !important;
+  }
 
 .titulo-main{
     color: rgb(136, 4, 4);
@@ -125,3 +131,103 @@
     display: flex;
     flex-direction: row;
 }
+
+@media (max-width: 768px) {
+
+
+     body {
+    max-width: 100vw;       /* nunca ultrapassa a largura da tela */
+    overflow-x: hidden;     /* remove scroll horizontal */
+  }
+
+ 
+
+  
+
+  /* CORREÇÃO ESPECÍFICA DO HEADER .topo */
+  .topo {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+    width: 100% !important; /* Força 100% de largura */
+    max-width: 100% !important; /* Garante que não ultrapasse */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin: 0 !important; /* Remove margens */
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+
+
+  .titulo-main {
+    font-size: 30px; /* reduz tamanho */
+    padding: 5px;
+    margin: 0;
+  }
+
+  .logo-topo {
+    width: 130px;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* container vira coluna */
+  .container {
+    flex-direction: column;
+    
+  }
+
+  /* menu lateral vira barra superior */
+  .menu-lateral {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-lateral ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .lista-lateral a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* conteúdo principal */
+  /*A partir daqui é a parte destinada a resposividade do main*/
+  .main-menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+    
+  }
+
+
+  .img-atleta{
+    
+    width: 175px;           /* Largura fixa */
+    height: 200px;          /* Altura fixa */
+    object-fit: cover;      /* ★ MAGICO - ajusta a imagem sem distorcer */
+    object-position: center; /* Centraliza o foco da imagem */
+    margin: 15px;
+}
+
+.div-atleta1{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-atleta1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+}
+

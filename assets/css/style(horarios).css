@@ -15,6 +15,8 @@
 
 }
 
+
+
 .titulo-main{
     color: rgb(136, 4, 4);
     font-size: 90px;
@@ -149,19 +151,19 @@ table, th, td { /*essa parte do código serve para configurar a tabela*/
 
   /* topo responsivo */
   .topo {
-    flex-direction: column; /* USA O LAYOUT DE COLUNAlogo e título em cima/embaixo */
-    /*deixa os elementos centralizados,deixando os filhos do top empilhados verticalmente*/
-    
-    justify-content: center;/*vai centralizar verticalmente os itens*/
-    
-    text-align: center;/*centraliza o texto*/
-    
+    background-color: rgb(3,3,3);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     height: auto;
-    
-    padding: 1rem; /*1rem é relativo ao tamanho da fonte base, é uma unidade fluida.*/
-    
+    padding: 1rem;
+    width: 100% !important; /* Força 100% de largura */
+    max-width: 100% !important; /* Garante que não ultrapasse */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin: 0 !important; /* Remove margens */
+    left: 0 !important;
+    right: 0 !important;
   }
-
   .titulo-main {
     font-size: 30px; /* reduz tamanho */
     padding: 5px;
