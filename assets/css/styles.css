@@ -107,7 +107,7 @@
 /* ========== RESPONSIVIDADE MOBILE ========== */
 
 /*media funciona como se fosse uma condicional,para quando o usuário utilizar uma tela menor*/
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
 
      body {
