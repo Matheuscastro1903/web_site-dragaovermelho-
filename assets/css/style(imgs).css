@@ -85,7 +85,7 @@
 .main-menu-div{
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: line;
     align-items: center;     /* ← Centraliza HORIZONTALMENTE */
     
 
@@ -172,4 +172,19 @@ button.prev, button.next {
 
 .next{
     margin-left: 40px;
+    margin-right: 40px;
+}
+
+.texto-div {
+  /* Define uma largura máxima para a div */
+  max-width: 800px; /* ou qualquer valor que preferir */
+  
+  
+  
+  /* Adiciona algum espaçamento interno */
+  
+  
+  /* Garante que o conteúdo não ultrapasse os limites */
+  box-sizing: border-box;
+
 }

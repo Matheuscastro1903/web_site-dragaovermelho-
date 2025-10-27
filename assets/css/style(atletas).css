@@ -68,6 +68,60 @@
      font-weight: bold;
 }
 
+/*
 .main-menu{
+    display: flex;
+     /*SEM flex: 1 → O elemento só ocupa o espaço do seu conteúdo
+    flex: 1;                 /* ← CHAVE DO FUNCIONAMENTO 
+    display: flex;
+    flex-direction: column;
     
+}
+*/
+
+
+.img-atleta{
+    
+    width: 350px;           /* Largura fixa */
+    height: 400px;          /* Altura fixa */
+    object-fit: cover;      /* ★ MAGICO - ajusta a imagem sem distorcer */
+    object-position: center; /* Centraliza o foco da imagem */
+    margin: 15px;
+}
+
+.main-menu{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.div-atleta{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    
+}
+
+
+
+.conteudo-texto{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px; /* ou qualquer valor que preferir */
+  
+  
+  
+  /* Adiciona algum espaçamento interno */
+  
+  
+  /* Garante que o conteúdo não ultrapasse os limites */
+  box-sizing: border-box;
+}
+
+.div-atleta1{
+    display: flex;
+    flex-direction: row;
 }
