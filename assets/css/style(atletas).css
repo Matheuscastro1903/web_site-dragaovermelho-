@@ -202,7 +202,8 @@
   .main-menu {
     flex-direction: column;
     width: 100%;
-    padding: 0 10px;
+    
+    
     
   }
 
@@ -213,7 +214,7 @@
     height: 200px;          /* Altura fixa */
     object-fit: cover;      /* ★ MAGICO - ajusta a imagem sem distorcer */
     object-position: center; /* Centraliza o foco da imagem */
-    margin: 15px;
+    margin: 10px;
 }
 
 .div-atleta1{
