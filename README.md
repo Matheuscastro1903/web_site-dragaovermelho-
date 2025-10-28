@@ -34,8 +34,9 @@ O design foi pensado para ser leve, moderno e responsivo, permitindo acesso tant
 ##  Funcionalidades
 
 - **Tela Inicial / Introdução** — Apresentação da equipe e filosofia  
-  - 📱 *Imagem (mobile)* — _[img/imagens_projeto/imagem_tela_inicial]_  
-  img/imagens_projeto/
+  - 📱 *Imagem (mobile)* 
+  ![Tela inicial-mobile](imagens_projeto/imagem_tela_inicial)  
+  
   - 🖥️ *Imagem (desktop)* — _[img/imagens_projeto/imagem_tela_inicial_pc]_  
   imagem_tela_inicial_pc
 
