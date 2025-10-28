@@ -34,8 +34,10 @@ O design foi pensado para ser leve, moderno e responsivo, permitindo acesso tant
 ##  Funcionalidades
 
 - **Tela Inicial / Introdução** — Apresentação da equipe e filosofia  
-  - 📱 *Imagem (mobile)* — _[imagem_tela_inicial]_  
-  - 🖥️ *Imagem (desktop)* — _[imagem_tela_inicial_pc]_  
+  - 📱 *Imagem (mobile)* — _[img/imagens_projeto/imagem_tela_inicial]_  
+  img/imagens_projeto/
+  - 🖥️ *Imagem (desktop)* — _[img/imagens_projeto/imagem_tela_inicial_pc]_  
+  imagem_tela_inicial_pc
 
 - **Treinos** — Descrição das modalidades e tipos de treino  
   - 📱 *Imagem (mobile)* — _[imagem_treinos]_  
